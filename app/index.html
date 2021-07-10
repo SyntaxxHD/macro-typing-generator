@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link id="stylesheet" rel="stylesheet" type="text/css" href="assets/css/style-dark.css">
+      <link id="stylesheet" rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="icon" type="image/svg+xml" href="assets/img/logo-icon.svg"/>
+      <title>Macro Typing Generator</title>
+   </head>
+   <body id="body">
+      <script src="assets/js/socket.io.min.js"></script>
+      <nav>
+         <div class="nav-box green">
+            <span class="title">Macro Typing Generator</span>
+            <img class ="logo" src="assets/img/logo.svg">
+            <div class="menu">
+               <img id="reload" src="assets/img/reload.svg">
+               <img id="help" src="assets/img/question.svg">
+               <img id="settings" src="assets/img/settings.svg">
+            </div>
+         </div>
+      </nav>
+      <div class="content">
+      <div class="input">
+         <input id="name" placeholder="Name">
+         <input id="word" placeholder="Text" style="width: 500px;">
+         <input id="delay" type="number" placeholder="Delay in seconds">
+      </div>
+      <div class="generate">
+      <div class="generate-box">
+         <img class="logo-icon" id="logo-icon" src="assets/img/logo.svg">
+         <img class="download-icon" id="download-icon" src="assets/img/down-arrow.svg" onclick="downloadXml()">
+         <img class="loading-icon" id="loading-icon" src="assets/img/785.svg"><br>
+         <span class="progress-text" id="progress-text"></span><br>
+         <span class="progress-text error-message" id="error-message"></span><br>
+         <div id="download-box">
+            <button class="btn download-btn" id="download-btn">Generate</button>
+         </div>
+      </div>
+      <!-- HELP MODAL-->        
+      <div id="help-modal" class="modal">
+         <div class="modal-content">
+            <div class="modal-header">
+               <span class="close">&times;</span>
+               <h2 id="help-title">How to save and import the Macro/XML-File?</h2>
+            </div>
+            <div class="modal-body">
+               <img class="save-under-img" src="assets/img/save-under.png">
+               <p id="help-l1">After your Macro is generated, click the "Download" button. Click on "save" to save the xml-file.</p>
+               <img class="save-under-img" src="assets/img/import.jpg">
+               <p id="help-l2">In Razer Synapse 3.0 go to the Macro tab and click on the icon with the arrow pointing in a box to import your Macro. Choose the xml-file you previously created.</p>
+               <img class="save-under-img" src="assets/img/select-macro.png">
+               <p id="help-l3">Select any button on your Razer keyboard or your Razer mouse, then select Macro and then select your Macro, you just have imported. To execute the Macro, press the button which you linked the Macro with.</p>
+            </div>
+            <div class="modal-footer">
+               <h3></h3>
+            </div>
+         </div>
+      </div>
+      <!---->
+      <!-- SETTINGS MODAL-->        
+      <div id="settings-modal" class="modal">
+         <div class="modal-content">
+            <div class="modal-header">
+               <span id="close2" class="close">&times;</span>
+               <h2 id="lang-settings">Settings</h2>
+            </div>
+            <div class="modal-body">
+               <div class="settings-box">
+                  <h3 id="lang-theme">Theme</h3>
+                  <div class="theme-slider">
+                     <label class="switch">
+                     <input id="theme-slider" type="checkbox">
+                     <span class="slider round"></span>
+                     </label>
+                  </div>
+                  <div class="theme-icons">
+                     <img src="assets/img/moon-phase-outline.svg">
+                     <img src="assets/img/sun.svg">
+                  </div>
+               </div>
+               <div class="settings-box">
+                  <h3 id="lang-language">Language</h3>
+                  <div class="language-select">
+                     <select id="language" class="language-dropdown">
+                         <option class="translate" id="de" value="1">Deutsch</option>
+                        <option class="translate" id="en" value="2">English</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <h3></h3>
+            </div>
+         </div>
+      </div>
+      <!---->  
+      <script src="assets/js/script.js"></script>
+      <script src="assets/js/FileSaver.js"></script>
+      <script src="assets/js/language/de-DE.js"></script>
+      <script src="assets/js/language/en-US.js"></script>
+   </body>
+</html>

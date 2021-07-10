@@ -1,0 +1,7 @@
+electron-builder.yml
+node_modules/
+dist/
+release-builds/
+de/
+license.docx
+license.txt

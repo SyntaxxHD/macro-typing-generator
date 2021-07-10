@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+body {
+  background-color: #ecf0f1;
+}
+
+.title-bar {
+  background-color: #1c1c1c;
+}
+
+.input input {
+  background-color: #ecf0f5;
+  color: #000;
+}
+
+::placeholder {
+  color: #2a2a2a;
+}
+
+.generate-box {
+  background-color: #dde6e8;
+}
+
+.download-icon {
+  -webkit-filter: drop-shadow(1px 1px 1px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+}
+
+.loading-icon {
+  -webkit-filter: drop-shadow(1px 1px 1px #222);
+  filter: drop-shadow(1px 1px 1px #222);
+}
+
+.progress-text {
+  color: #000;
+}
+
+.modal-body {
+  background: #ecf0f1;
+  color: #000000;
+}
+
+.modal-body p {
+  color: #000000;
+}
+
+.modal-footer {
+  background: #ecf0f1;
+}
+
+.settings-box {
+  background-color: #dde6e8;
+}
+
+.theme-icons img {
+  -webkit-filter: drop-shadow(3px 3px 5px #222);
+  filter: drop-shadow(3px 3px 5px #222);
+}
+
+.language-dropdown {
+  background-color: #fff;
+  color: #000;
+}
+
+.language-dropdown option {
+  color: #000000;
+}
