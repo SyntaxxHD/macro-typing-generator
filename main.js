@@ -28,17 +28,17 @@ let win;
      store.set('winBounds', win.getBounds())
    })
 
-    //autoUpdater.checkForUpdatesAndNotify();
+    autoUpdater.checkForUpdatesAndNotify();
  });
 
 autoUpdater.on('update-available', () => {
   win.webContents.send('update_available');
 });
 
-/*autoUpdater.on('update-downloaded', () => {
+autoUpdater.on('update-downloaded', () => {
   win.webContents.send('update_downloaded');
 });
 
 ipcMain.on('restart_app', () => {
   autoUpdater.quitAndInstall();
-});*/
+});
