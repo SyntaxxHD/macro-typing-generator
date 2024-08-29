@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body {
   margin: 0px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 a:focus {
@@ -167,13 +167,13 @@ option:focus {
   margin: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
   padding-left: 10px;
 }
 
 ::placeholder {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 15px;
 }
 
@@ -237,7 +237,7 @@ option:focus {
   background-color: #2ecc71;
   box-shadow: 0px 5px 0px 0px #21884d;
   border: 0px solid;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   cursor: pointer;
 }
 
@@ -386,7 +386,7 @@ option:focus {
 
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 26px;
   width: 26px;
   left: 4px;
