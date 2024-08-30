@@ -14,7 +14,8 @@
     "package": "asar pack Macro-Typing-Generator",
     "dist": "electron-builder",
     "build": "electron-builder build --win --publish never",
-    "deploy": "electron-builder build --win --publish always"
+    "deploy": "electron-builder build --win --publish always",
+    "postversion": "git push && git push --tags"
   },
   "build": {
     "appId": "com.syntaxx.macro-typing-generator",
